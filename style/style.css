@@ -1,0 +1,31 @@
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* UTILITIS */
+
+.container {
+  max-height: 80px;
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* DEBUG */
+
+.debug {
+  border: dashed 2px red;
+}
+
+.bg-header {
+  background-color: dodgerblue;
+}
+
+/* HEADER */
