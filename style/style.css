@@ -15,7 +15,14 @@ img {
 }
 
 .bug {
-  border: 2px solid red;
+  border: 1px solid red;
+}
+
+/* LAYOUT */
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 li {
@@ -27,14 +34,9 @@ a {
   font-size: 0.9rem;
 }
 
-/* LAYOUT */
-
-.container {
-  margin: 0 auto;
-  max-width: 100%;
+.card {
+  height: 150px;
 }
-
-/* SECTIONS */
 
 /* header */
 
@@ -60,16 +62,92 @@ nav li {
   display: none;
 }
 
-/*card row */
+/* intro */
+
+#intro {
+  padding: 2.5rem 1.5rem;
+}
 
 #intro .col {
-  padding: 2rem;
+  padding: 0.5rem 0.5rem;
 }
 
 #intro .card {
   background-color: #b5ddff;
+  border-radius: 1rem;
 }
 
-.card {
-  height: 500px;
+/* plan */
+
+#plan {
+  background-color: #9792e4;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#plan .card {
+  border-radius: 2rem;
+}
+
+#plan .card:last-child {
+  background-color: white;
+}
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 576px) {
+  /*header*/
+
+  nav {
+    background-color: green;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  nav a {
+    color: white;
+    padding: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  nav li:last-child a {
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  /*card*/
+
+  #intro {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #intro .col:first-child {
+    width: calc(100% / 3 * 2);
+  }
+
+  #intro .col {
+    width: calc(100% / 3);
+  }
+
+  /*plan*/
+
+  #plan {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  #plan .card {
+    width: 50%;
+  }
 }
