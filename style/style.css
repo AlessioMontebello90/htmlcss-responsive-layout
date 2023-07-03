@@ -6,26 +6,23 @@
   padding: 0;
 }
 
-/* UTILITIS */
-
-.container {
-  max-height: 80px;
-  padding: 0 auto;
-  margin: 0 auto;
+body {
+  font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.flex {
-  display: flex;
+img {
+  max-width: 100%;
 }
 
-/* DEBUG */
-
-.debug {
-  border: dashed 2px red;
+.bug {
+  border: 2px solid red;
 }
 
-.bg-header {
-  background-color: dodgerblue;
+li {
+  list-style-type: none;
 }
 
-/* HEADER */
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
