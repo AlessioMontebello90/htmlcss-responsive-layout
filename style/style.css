@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: 'Akatab', sans-serif;
+  font-family: "Akatab", sans-serif;
+  color: #5a6e7f;
 }
 
 img {
@@ -18,37 +19,49 @@ img {
   border: 1px solid red;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
 
 /* LAYOUT */
 
 .container {
   margin: 0 auto;
   max-width: 100%;
-
 }
 
 li {
   list-style-type: none;
-
-}
-
-a {
-  text-decoration: none;
-  font-size: .9rem;
-
 }
 
 .card {
   min-height: 150px;
 }
 
+.bg-violet {
+  background-color: #9792e4;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
 
 /* SECTIONS */
 
 /* header */
 
-nav {
+header {
   background-color: #0084fd;
+}
+
+nav {
   min-height: 80px;
   display: flex;
   justify-content: space-between;
@@ -76,37 +89,118 @@ nav li {
 }
 
 #intro .col {
-  padding: .5rem .5rem;
+  padding: 1rem 0.5rem;
 }
 
 #intro .card {
   background-color: #b5ddff;
   border-radius: 1rem;
+  padding: 2rem 2rem;
+  text-align: center;
+  height: 100%;
 }
 
+#intro h3 {
+  color: #0084fd;
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
 
+#intro i {
+  color: #0084fd;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
 
+#intro p {
+  line-height: 1.6rem;
+  font-weight: 700;
+}
+
+#intro .col:first-child .card {
+  text-align: start;
+  padding-bottom: 0;
+}
+
+#intro .col:first-child h3 {
+  text-align: start;
+}
+
+#intro .col:first-child p {
+  padding-bottom: 2rem;
+}
+
+#intro .col:first-child button a {
+  background-color: #0084fd;
+  color: white;
+  padding: 0.6rem 3rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+#intro .fa-apple {
+  color: white;
+  font-size: 1rem;
+}
+
+#intro img {
+  display: block;
+}
 
 /* plan */
 
 #plan {
   background-color: #9792e4;
-  padding: 3rem 2rem;
+  padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 #plan .card {
-  border-radius: 2rem;
+  border-radius: 3rem;
+}
+
+#plan .card:first-child {
+  color: white;
+}
+
+#plan h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+#plan p {
+  line-height: 1.7rem;
 }
 
 #plan .card:last-child {
   background-color: white;
-
-
+  color: black;
+  text-align: center;
+  padding: 2rem;
 }
 
+#plan .card:last-child h3 {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+#plan .card:last-child p {
+  font-style: italic;
+  padding-bottom: 2rem;
+}
+
+#plan .fa-arrow-down {
+  background-color: #9792e4;
+  padding: 1rem;
+  border-radius: 50%;
+}
 
 /* partner */
 
@@ -119,38 +213,31 @@ nav li {
 }
 
 #partner h1 {
-  word-spacing: .18rem;
-  letter-spacing: .05rem;
-  line-height: 2.5rem;
+  line-height: 3.5rem;
   color: #9792e4;
-  font-weight: 900;
 }
 
 #partner .card {
   background-color: #9792e4;
-  border-radius: 2rem;
+  border-radius: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   color: white;
   padding: 2rem 0;
-
-
 }
 
 #partner h3 {
   line-height: 1.8rem;
-  word-spacing: .25rem;
+  word-spacing: 0.25rem;
   padding: 0 2rem;
   font-weight: lighter;
   padding-bottom: 1rem;
-
-
 }
 
 #partner .card img {
-  width: 250px;
+  width: 200px;
   aspect-ratio: 1/1;
   border-radius: 50%;
 }
@@ -167,16 +254,15 @@ nav li {
 #partner span {
   font-weight: 800;
   font-size: 2.5rem;
-  line-height: .5rem;
+  line-height: 0.5rem;
 }
 
 #partner .card p {
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   font-size: 1.1rem;
 }
-
 
 /* benefits */
 
@@ -188,7 +274,6 @@ nav li {
 #benefits h1 {
   color: white;
   text-align: center;
-
 }
 
 #benefits .row {
@@ -201,13 +286,41 @@ nav li {
 #benefits .card {
   background-color: white;
   border-radius: 2rem;
+  padding: 2rem;
+  text-align: start;
 }
 
+#benefits .card h1 {
+  color: #9792e4;
+  text-align: start;
+  font-size: 4rem;
+}
+
+#benefits .card h2 {
+  color: #9792e4;
+  padding: 1rem 0;
+}
+
+#benefits .card p {
+  line-height: 1.6rem;
+}
+
+#benefits .card button {
+  padding: 2rem 0 1rem;
+}
+
+#benefits .card button a {
+  background-color: #9792e4;
+  padding: 0.5rem 2.8rem;
+  border-radius: 2rem;
+  color: white;
+  font-weight: 800;
+}
 
 /*about us*/
 
 #about-us {
-  padding: 2rem;
+  padding: 3rem;
 }
 
 #about-us h1,
@@ -217,22 +330,16 @@ nav li {
   padding-bottom: 2rem;
 }
 
-
-
 #about-us p {
   line-height: 2rem;
   padding-bottom: 2rem;
 }
 
-
-
 #about-us img {
   width: 200px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-
 }
-
 
 #about-us span {
   color: #9792e4;
@@ -250,222 +357,256 @@ nav li {
 
 #about-us button a {
   color: white;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   display: inline-block;
-
 }
+
+/*get started*/
+
+#get-started {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: white;
+}
+
+#get-started h1 {
+  font-size: 4rem;
+  color: #fdc15f;
+}
+
+#get-started h2 {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+#get-started p {
+  line-height: 2rem;
+}
+
+#get-started button {
+  padding: 3rem;
+}
+
+#get-started button a {
+  color: #9792e4;
+  background-color: white;
+  padding: 1rem 5rem;
+  border-radius: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+}
+
+#get-started address {
+  font-style: normal;
+}
+
+#get-started address a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+/*footer*/
 
 footer {
   background-color: #333333;
+  color: white;
+  text-align: center;
+  padding: 1rem 3rem;
 }
 
-footer .row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+footer a {
+  color: #9792e4;
+  text-decoration: underline;
 }
 
+footer .container > * {
+  padding: 2.5rem 0;
+}
 
 /* RESPONSIVE */
 
-@media screen and (min-width:576px) {
+/* tablet************************************************************************************ */
 
+@media screen and (min-width: 576px) {
   /*header*/
-
-  nav {
-      background-color: greenyellow;
-  }
 
   /*intro*/
 
   #intro {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #intro .col:first-child {
-      width: calc((100%)/ 3 * 2);
+    width: calc((100%) / 3 * 2);
   }
 
   #intro .col {
-      width: calc((100%)/ 3);
+    width: calc((100%) / 3);
   }
 
   /*plan*/
 
   #plan h2 {
-      font-size: 3rem;
+    font-size: 3rem;
   }
-
 
   /*partner*/
 
   #partner .card {
-      flex-direction: row;
-      padding: 2rem 1rem;
-      text-align: start;
+    flex-direction: row;
+    padding: 2rem 1rem;
+    text-align: start;
   }
 
   #partner .card p {
-      padding-left: 2rem;
-      padding-top: 1rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
   }
-
 
   /*benefits*/
 
   #benefits .row {
-      flex-direction: row;
-      flex-wrap: wrap;
-
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
 
   #benefits .card {
-      width: calc(50% - 1rem);
+    width: calc(50% - 1rem);
   }
-
 
   /*about us*/
 
+  #about-us {
+    display: flex;
+    gap: 4rem;
+  }
 
+  #about-us div:first-child {
+    width: calc(100% / 3 * 2);
+  }
 
+  #about-us div:last-child {
+    width: calc(100% / 3);
+  }
+
+  #about-us span {
+    transform: rotate(180deg) translate(-150px, 230px);
+    display: none;
+  }
+
+  /*get-started*/
+
+  #get-started > * {
+    width: 60%;
+  }
+
+  /*footer - same mobile*/
 }
 
+/* desktop******************************************************************************* */
 
-
-
-/* desktop********** */
-
-
-@media screen and (min-width:992px) {
-
+@media screen and (min-width: 992px) {
   /*header*/
 
   .container {
-      max-width: 1000px;
-  }
-
-  nav {
-      background-color: red;
+    max-width: 1000px;
   }
 
   .fa-bars {
-      display: none;
+    display: none;
   }
 
   nav li {
-      display: inline;
-
+    display: inline;
   }
 
   nav a {
-
-      color: white;
-      padding: .5rem;
-      margin-left: 1rem;
+    color: white;
+    padding: 0.5rem;
+    margin-left: 1rem;
   }
 
   nav li:last-child a {
-      color: black;
-      background-color: white;
-      border-radius: 1rem;
-      padding: .5rem 1rem;
+    color: black;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
   }
-
 
   /*intro*/
 
-
   #intro {
-      display: flex;
-      flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   #intro .col:first-child {
-      width: calc(100% / 3 *2);
+    width: calc(100% / 3 * 2);
   }
 
   #intro .col {
-      width: calc(100% / 3);
+    width: calc(100% / 3);
   }
 
   #intro .col:first-child .card {
-      display: flex;
-      padding-bottom: 0;
+    display: flex;
+    padding-bottom: 0;
   }
-
 
   /*plan*/
   /*da vedere*/
 
   #plan {
-      flex-direction: row;
-      justify-content: flex-end;
-      padding: 10rem 3rem 3rem;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10rem 3rem 3rem;
   }
 
   #plan .card {
-      width: 50%;
-
+    width: 50%;
   }
 
-
   /*partner - same tablet*/
-
-
 
   /*benefits*/
 
   #benefits .row {
-      flex-direction: row;
-      flex-wrap: wrap;
-
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
 
   #benefits .card {
-      width: calc((100% - 4rem) / 3);
+    width: calc((100% - 4rem) / 3);
   }
-
 
   /*about us*/
 
   #about-us {
-      display: flex;
+    display: flex;
   }
 
   #about-us div:first-child {
-      width: calc(100% / 3*2)
+    width: calc(100% / 3 * 2);
   }
-
 
   #about-us div:last-child {
-      width: calc(100% / 3)
+    width: calc(100% / 3);
   }
 
+  #about-us span {
+    transform: rotate(180deg) translate(70px, 80px);
+    display: inline-block;
+  }
 
+  /*get started - same tablet*/
 
+  /*footer*/
 
+  footer > * {
+    width: 60%;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*chiusura media q*/
